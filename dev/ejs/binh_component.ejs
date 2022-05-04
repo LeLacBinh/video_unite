@@ -1,136 +1,145 @@
 <%- include('inc/_header'); %>
 <!--▼ Content area ▼-->
 <main class="p-top">
-<style>
+  <style>
+    body {
+      background-color: #ffa5006b;
+    }
     .example {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
     }
     .example_title {
-        margin-bottom: 30px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid black;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid black;
     }
-</style>
-<section class="example">
+  </style>
+  <section class="example">
     <h2 class="example_title">Point</h2>
     <section class="c-point">
-        <div class="l-container">
-            <div class="c-point__title">
-                <h2>POINT</h2>
-                <p>ビデオユニテの"TV制作"のポイント</p>
-            </div>
-            <div class="c-point__list">
-                <div class="c-point__item" data-aos="fade-up">
-                    <h4 class="c-point__count">
-                        POINT
-                    </h4>
-                    <div class="c-point__image">
-                        <div class="c-point__image-box">
-                            <img src="../assets/img/work.png" alt="point">
-                        </div>
-                    </div>
-                    <p>
-                        ハイクオリティ・高品質<br>
-                        が自慢です。
-                    </p>
-                </div>
-                <div class="c-point__item" data-aos="fade-up">
-                    <h4 class="c-point__count">
-                        POINT
-                    </h4>
-                    <div class="c-point__image">
-                        <div class="c-point__image-box">
-                            <img src="../assets/img/work.png" alt="point">
-                        </div>
-                    </div>
-                    <p>
-                        ハイクオリティ・高品質<br>
-                        が自慢です。
-                    </p>
-                </div>
-                <div class="c-point__item" data-aos="fade-up">
-                    <h4 class="c-point__count">
-                        POINT
-                    </h4>
-                    <div class="c-point__image">
-                        <div class="c-point__image-box">
-                            <img src="../assets/img/work.png" alt="point">
-                        </div>
-                    </div>
-                    <p>
-                        ハイクオリティ・高品質<br>
-                        が自慢です。
-                    </p>
-                </div>
-            </div>
-            <p class="c-point__desc">
-                当社が長年にわたり3000社以上のお客様から選ばれ続けたのは、<br>
-                ひとえに顧客との信頼関係だと考えています。<br>
-                その信頼関係に欠かせないものが、この制作ポイントなのです。
-            </p>
+      <div class="l-container">
+        <div class="c-point__title">
+          <h2>POINT</h2>
+          <p>ビデオユニテの"TV制作"のポイント</p>
         </div>
+        <div class="c-point__list">
+          <div class="c-point__item" data-aos="fade-up">
+            <h4 class="c-point__count">POINT</h4>
+            <div class="c-point__image">
+              <div class="c-point__image-box">
+                <img src="../assets/img/work.png" alt="point" />
+              </div>
+            </div>
+            <p>
+              ハイクオリティ・高品質<br />
+              が自慢です。
+            </p>
+          </div>
+          <div class="c-point__item" data-aos="fade-up">
+            <h4 class="c-point__count">POINT</h4>
+            <div class="c-point__image">
+              <div class="c-point__image-box">
+                <img src="../assets/img/work.png" alt="point" />
+              </div>
+            </div>
+            <p>
+              ハイクオリティ・高品質<br />
+              が自慢です。
+            </p>
+          </div>
+          <div class="c-point__item" data-aos="fade-up">
+            <h4 class="c-point__count">POINT</h4>
+            <div class="c-point__image">
+              <div class="c-point__image-box">
+                <img src="../assets/img/work.png" alt="point" />
+              </div>
+            </div>
+            <p>
+              ハイクオリティ・高品質<br />
+              が自慢です。
+            </p>
+          </div>
+        </div>
+        <p class="c-point__desc">
+          当社が長年にわたり3000社以上のお客様から選ばれ続けたのは、<br />
+          ひとえに顧客との信頼関係だと考えています。<br />
+          その信頼関係に欠かせないものが、この制作ポイントなのです。
+        </p>
+      </div>
     </section>
-</section>
-<section class="example">
+  </section>
+  <section class="example">
     <h2 class="example_title">Contact Form</h2>
-    <section class="c-contactForm">
+    <div class="l-container">
+      <section class="c-contactForm">
         <form action="">
-            <div class="c-contactForm__row">
-                <div class="c-contactForm__label">
-                    <p>
-                        <label for="">お名前</label>
-                    </p>
-                </div>
-                <div class="c-contactForm__input">
-                    <input type="text" placeholder="例)田中太朗">
-                </div>
+          <div data-aos="fade-up" class="c-contactForm__row">
+            <div class="c-contactForm__label">
+              <p>
+                <label for="">お名前</label>
+              </p>
             </div>
-            <div class="c-contactForm__row">
-                <div class="c-contactForm__label">
-                    <p class="u-required">
-                        <label for="">電話番号</label>
-                    </p>
-                </div>
-                <div class="c-contactForm__input">
-                    <input type="text" placeholder="例)123-4567-890">
-                </div>
+            <div class="c-contactForm__input">
+              <input type="text" placeholder="例)田中太朗" />
             </div>
-            <div class="c-contactForm__row">
-                <div class="c-contactForm__label">
-                    <p class="u-required">
-                        <label for="">メールアドレス</label>
-                    </p>
-                </div>
-                <div class="c-contactForm__input">
-                    <input type="email" placeholder="例)example@abc.com">
-                </div>
+          </div>
+          <div data-aos="fade-up" class="c-contactForm__row">
+            <div class="c-contactForm__label">
+              <p class="u-required">
+                <label for="">電話番号</label>
+              </p>
             </div>
-            <div class="c-contactForm__row">
-                <div class="c-contactForm__label">
-                    <p>
-                        <label for="">お問い合わせの内容</label>
-                    </p>
-                </div>
-                <div class="c-contactForm__input">
-                    <select name="" id="">
-                        <option value="選択してください">選択してください</option>
-                    </select>
-                </div>
+            <div class="c-contactForm__input">
+              <input type="text" placeholder="例)123-4567-890" />
             </div>
-            <div class="c-contactForm__row">
-                <div class="c-contactForm__label">
-                    <p>
-                        <label for="">メッセージ</label>
-                    </p>
-                </div>
-                <div class="c-contactForm__input">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="こちらにご記入ください"></textarea>
-                </div>
+          </div>
+          <div data-aos="fade-up" class="c-contactForm__row">
+            <div class="c-contactForm__label">
+              <p class="u-required">
+                <label for="">メールアドレス</label>
+              </p>
             </div>
+            <div class="c-contactForm__input">
+              <input type="email" placeholder="例)example@abc.com" />
+            </div>
+          </div>
+          <div data-aos="fade-up" class="c-contactForm__row">
+            <div class="c-contactForm__label">
+              <p>
+                <label for="">お問い合わせの内容</label>
+              </p>
+            </div>
+            <div class="c-contactForm__input">
+              <select name="" id="">
+                <option value="選択してください">選択してください</option>
+              </select>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="c-contactForm__row">
+            <div class="c-contactForm__label">
+              <p>
+                <label for="">メッセージ</label>
+              </p>
+            </div>
+            <div class="c-contactForm__input">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="こちらにご記入ください"
+              ></textarea>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="c-contactForm__row c-contactForm__row--submit">
+              <div class="submit-btn">
+                  <input type="submit" value="送信する" />
+              </div>
+          </div>
         </form>
-    </section>
-</section>
+      </section>
+    </div>
+  </section>
 </main>
 <!--▲ Content are ▲-->
 <%- include('inc/_footer'); %>
-
