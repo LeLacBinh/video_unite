@@ -7,16 +7,16 @@
     overflow: hidden;
     &__title{
         margin-bottom: 73px;
-        h2{
-            font-size: 6rem;
-            letter-spacing: 0.2em;
-            line-height: 1;
-        }
-        p{
-            font-size: 1.9rem;
-            margin-top: 19px;
-            letter-spacing: 0.2em;
-        }
+        // h2{
+        //     font-size: 6rem;
+        //     letter-spacing: 0.2em;
+        //     line-height: 1;
+        // }
+        // p{
+        //     font-size: 1.9rem;
+        //     margin-top: 19px;
+        //     letter-spacing: 0.2em;
+        // }
     }
     &__list{
         display: flex;
@@ -93,17 +93,17 @@
     .c-point{
         padding: 40px 0;
         &__title{
-            margin-bottom: 40pxpx;
-            h2{
-                font-size: 2.2rem;
-                letter-spacing: 0.2em;
-                line-height: 1;
-            }
-            p{
-                font-size: 1.3rem;
-                margin-top: 18px;
-                letter-spacing: 0.15em;
-            }
+            margin-bottom: 40px;
+            // h2{
+            //     font-size: 2.2rem;
+            //     letter-spacing: 0.2em;
+            //     line-height: 1;
+            // }
+            // p{
+            //     font-size: 1.3rem;
+            //     margin-top: 18px;
+            //     letter-spacing: 0.15em;
+            // }
         }
         &__list{
             flex-wrap: wrap;
