@@ -1,0 +1,90 @@
+.c-pick-up{
+    position: relative;
+    &__slide{
+        padding-bottom: 60px;
+        .slick-slide {
+            // padding: 0 27px;
+            // padding: 0 2vw;
+        }
+        .slick-dots{
+            bottom: 0;
+            li,button,button::before{
+                width: 30px;
+                height: 30px;
+            }
+            button{
+                &::before{
+                    content:'⬤';
+                    font-size: 1.5rem;
+                    // top: 50%;
+                    // left: 50%;
+                    // transform: translate(-50%);
+                    color: #d8d8d8;
+                    opacity: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .slick-active{
+                button{
+                    &::before{
+                        font-size: 2rem;
+                        color: #fc9045;
+                    }
+                }
+            }
+        }
+    }
+    &__item{
+        transform: scale(0.8);
+        opacity: 0.6;
+        transition: 0.3s all;
+        &:not(.slick-center){
+            .c-post{
+                box-shadow: none;
+            }
+            a{
+                pointer-events: none;
+            }
+        }
+        &.slick-center{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &__arrows{
+        .arrow{
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #211d1c;
+            color: #fff;
+            font-size: 2.2rem;
+            cursor: pointer;
+            &.prev,&.next{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &.prev{
+                left: 17%;
+            }
+            &.next{
+                right: 17%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .c-pick-up{
+        &__item{
+            width: 70vw;
+            max-width: 300px;
+        }
+    }
+}

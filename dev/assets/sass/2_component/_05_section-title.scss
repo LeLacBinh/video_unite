@@ -1,0 +1,32 @@
+.c-section-title{
+    color: #b3b3b3;
+    text-align: center;
+    &--color-inherit{
+        color: inherit;
+    }
+    h2{
+        font-size: 6rem;
+        letter-spacing: 0.2em;
+        line-height: 1;
+    }
+    p{
+        font-size: 1.9rem;
+        margin-top: 19px;
+        letter-spacing: 0.2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .c-section-title{
+        h2{
+            font-size: 2.2rem;
+            letter-spacing: 0.2em;
+            line-height: 1;
+        }
+        p{
+            font-size: 1.3rem;
+            margin-top: 18px;
+            letter-spacing: 0.15em;
+        }
+    }
+}
