@@ -1,7 +1,12 @@
 /* Header
 ------------------------------------------------------------*/
+
 .c-header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
     display: flex;
+    background: #fff;
     justify-content: space-between;
     align-items: center;
     height: 87px;
@@ -72,5 +77,151 @@
         }
     }
 }
-/* Main menu
-------------------------------------------------------------*/
+
+.c-trigger,
+.c-trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+.c-trigger {
+    margin-right: 40px;
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+        border-radius: 4px;
+        &:nth-of-type(1) {
+            top: 0;
+        }
+        &:nth-of-type(2) {
+            top: 15px;
+        }
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
+}
+
+@keyframes active-menu05-bar02 {
+    100% {
+        height: 0;
+    }
+}
+
+#menu05 {
+    z-index: 11;
+    &.is-active {
+        span {
+            &:nth-of-type(1) {
+                transform: translateY(15px) rotate(-45deg);
+            }
+            &:nth-of-type(2) {
+                left: 50%;
+                opacity: 0;
+                animation: active-menu05-bar02 .8s forwards;
+            }
+            &:nth-of-type(3) {
+                transform: translateY(-17px) rotate(45deg);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .c-header {
+        &__contact {
+            padding: 0 20px;
+        }
+        &__call {
+            padding: 0 20px 0 10px;
+        }
+        &__nav {
+            ul {
+                a {
+                    padding: 0px 15px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .c-header {
+        height: 70px;
+        &.is-active {
+            .c-header__menu {
+                transform: translateX(0%);
+            }
+        }
+        &__menu {
+            transition: all .3s ease-in-out;
+            padding: 0 30px;
+            background: #fff;
+            width: 100%;
+            height: calc(100% - 70px);
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            flex-direction: column;
+            transform: translateX(100%);
+        }
+        &__nav {
+            margin-bottom: 20px;
+            ul {
+                margin-right: 0;
+                flex-direction: column;
+                li {
+                    text-align: center;
+                    width: 100%;
+                    border-bottom: 1px solid #ccc;
+                }
+                a {
+                    font-size: 3rem;
+                    font-weight: 400;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+                    color: #000;
+                    display: block;
+                    width: 100%;
+                    padding: 20px 0;
+                }
+            }
+        }
+        &__call {
+            margin: 15px 0;
+            &::after {
+                border-left-width: 0;
+            }
+        }
+        &__contact,
+        &__call {
+            background: #e06d18;
+            color: #fff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+            padding: 20px 20px;
+            font-size: 2rem;
+            font-weight: 400;
+            height: auto;
+            i {
+                margin-right: 17px;
+                font-size: 3rem;
+            }
+        }
+    }
+    .c-trigger {
+        display: block;
+    }
+}

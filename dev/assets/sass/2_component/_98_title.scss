@@ -2,9 +2,10 @@
     padding-bottom: 30px;
     position: relative;
     font-size: 4.5rem;
-    color: black;
+    color: #fff;
     letter-spacing: 9px;
-    &::before, &:after {
+    &::before,
+    &:after {
         content: "";
         width: 55px;
         height: 4px;
@@ -14,10 +15,30 @@
         background-color: #fff;
         bottom: -4px;
         right: 50%;
-    } 
+    }
     &::after {
         background-color: #000;
         bottom: 0;
         left: 50%;
-    } 
+    }
+}
+
+.c-title2 {
+    text-align: center;
+    &--silver {
+        color: #b4b4b4;
+    }
+    h2 {
+        font-family: CerebriSansBook;
+        margin-left: 16px;
+        line-height: 1;
+        font-size: 6.1rem;
+        letter-spacing: 18px;
+        font-weight: 400;
+    }
+    p {
+        margin-top: 14px;
+        font-size: 1.9rem;
+        letter-spacing: 5px;
+    }
 }

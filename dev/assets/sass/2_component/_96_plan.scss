@@ -1,0 +1,116 @@
+.c-plan {
+    padding: 155px 0;
+    &--blue {
+        .c-plan__item {
+            border-left-color: #77b0ea;
+            &:nth-child(even) {
+                border-left-color: #865df3;
+            }
+        }
+    }
+    // Body
+    &__body {
+        margin-top: 85px;
+    }
+    &__item {
+        margin-bottom: 39px;
+        border-radius: 10px;
+        border-left: 10px solid #ff720a;
+        box-shadow: 11px 20px 29px 6px rgba(0, 0, 0, .05%);
+        &:nth-child(even) {
+            border-left: 10px solid #ffc646;
+        }
+    }
+    &__heading {
+        padding: 13px 35px;
+        font-size: 2.5rem;
+        letter-spacing: 7px;
+        border-bottom: 1px solid #ccc;
+    }
+    &__detail {
+        display: flex;
+        padding: 33px 34px 24px;
+    }
+    &__img {
+        width: 31%;
+    }
+    &__content {
+        flex: 1;
+        margin-left: 25px;
+    }
+    &__title {
+        font-size: 2.1rem;
+        line-height: 1;
+        letter-spacing: 7px;
+    }
+    &__desc {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-top: 14px;
+        padding-right: 32px;
+        line-height: 1.7;
+    }
+    &__price {
+        line-height: 1;
+        margin-top: 37px;
+        font-size: 4.5rem;
+        font-weight: 900;
+        letter-spacing: 9px;
+        span {
+            font-size: 2.4rem;
+        }
+    }
+    &__footer {
+        margin-top: 100px;
+        text-align: center;
+        p {
+            margin-bottom: 37px;
+            font-weight: bold;
+            font-size: 1.8rem;
+            letter-spacing: 6px;
+        }
+    }
+    &__btn {
+        position: relative;
+        display: inline-block;
+        padding: 10px 10px;
+        width: 90%;
+        max-width: 380px;
+        background: #211d1d;
+        font-size: 2.2rem;
+        letter-spacing: 4px;
+        font-weight: 500;
+        color: #fff;
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            padding-right: 12px;
+            content: "\f105";
+            font-family: 'FontAwesome';
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-plan {
+        &__detail {
+            padding: 33px 34px;
+            flex-direction: column;
+        }
+        &__img {
+            text-align: center;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        &__content {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+    }
+}

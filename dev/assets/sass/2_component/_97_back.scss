@@ -1,3 +1,23 @@
 .c-back {
-    
+    mix-blend-mode: difference;
+    color: #fff;
+    border-left: 1px solid #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0 25px 44px 14px;
+    span {
+        writing-mode: vertical-lr;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-back {
+        padding: 0 15px 15px 5px;
+        span {
+            font-size: 1.6rem;
+        }
+    }
 }

@@ -1,6 +1,6 @@
-/*------------------------------------------------------------
-footer
+/* Footer
 ------------------------------------------------------------*/
+
 .c-footer {
     background-color: #211d1d;
     .c-titleline {
@@ -8,9 +8,12 @@ footer
     }
     // -----Header
     &__header {
-        padding: 80px 0 72px;
-        background: #e06d18;
+        padding: 80px 0 74px;
+        background: linear-gradient(to bottom, #ff8326, #fca126);
         text-align: center;
+        &--blue {
+            background: linear-gradient(to bottom, #6e36f1, #58a5e2);
+        }
     }
     &__contact {
         padding: 68px 0px 59px;
@@ -33,7 +36,6 @@ footer
             top: 50%;
             right: 0;
             transform: translateY(-50%);
-
         }
         i {
             display: block;
@@ -62,6 +64,7 @@ footer
             font-size: 6.5rem;
         }
         a {
+            color: #000;
             font-size: 3rem;
             letter-spacing: 8px;
             font-weight: bold;
@@ -105,7 +108,6 @@ footer
     &__right {
         flex: 1;
         display: flex;
-        
         li {
             margin-bottom: 9px;
             font-size: 1rem;
@@ -114,9 +116,11 @@ footer
                 padding-right: 12px;
                 content: "\f105";
                 font-family: 'FontAwesome';
-                
                 font-size: 1rem;
             }
+        }
+        a {
+            color: #fff;
         }
     }
     &__nav {
@@ -134,8 +138,7 @@ footer
     &__heading {
         margin-bottom: 53px;
         display: block;
-        font-weight:  400;
-        
+        font-weight: 400;
     }
     // -----Footer
     &__privacy {
@@ -150,5 +153,63 @@ footer
         margin: 0 auto;
         color: #fff;
         max-width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .c-footer {
+        &__contact,
+        &__body,
+        &__footer {
+            max-width: 94%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .c-footer {
+        &__contact {
+            padding: 50px 0;
+        }
+        &__web,
+        &__call {
+            margin: 0 20px;
+            i {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-footer {
+        &__contact {
+            padding: 20px 0;
+            flex-direction: column;
+        }
+        &__web,
+        &__call {
+            max-width: 90%;
+            width: 100%;
+            padding: 20px 0;
+        }
+        &__web {
+            border-bottom: 1px solid #ccc;
+            &::after {
+                background-color: transparent;
+            }
+        }
+        &__call {
+            margin-top: 30px;
+        }
+        &__body {
+            flex-direction: column;
+        }
+        &__right {
+            margin-top: 60px;
+        }
+        &__footer {
+            padding-right: 45px;
+        }
     }
 }
