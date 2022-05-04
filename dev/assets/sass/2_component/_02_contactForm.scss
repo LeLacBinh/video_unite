@@ -1,0 +1,24 @@
+.c-contactForm{
+    max-width: 1060px;
+    margin: 0 auto;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__label{
+        width: calc(100% - 62.26% - 30px);
+        label{
+            font-weight: bold;
+        }
+    }
+    &__input{
+        width: 62.26%;
+        input,select,textarea{
+            color: #b9b9b9;
+            background-color: #f7f7f7;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+}
