@@ -1,0 +1,23 @@
+.c-titleline {
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 4.5rem;
+    color: black;
+    letter-spacing: 9px;
+    &::before, &:after {
+        content: "";
+        width: 55px;
+        height: 4px;
+        position: absolute;
+    }
+    &::before {
+        background-color: #fff;
+        bottom: -4px;
+        right: 50%;
+    } 
+    &::after {
+        background-color: #000;
+        bottom: 0;
+        left: 50%;
+    } 
+}

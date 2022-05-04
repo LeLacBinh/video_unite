@@ -1,5 +1,76 @@
 /* Header
 ------------------------------------------------------------*/
-
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 87px;
+    border-bottom: 1px solid #ccc;
+    &__logo {
+        max-width: 125px;
+        margin-left: 40px;
+    }
+    &__menu {
+        display: flex;
+        height: 100%;
+    }
+    &__nav {
+        ul {
+            margin-right: 15px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            a {
+                padding: 0px 19px;
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: #000;
+                &.is-active {
+                    color: #040eff;
+                }
+            }
+        }
+    }
+    &__call {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 40px 0 20px;
+        font-size: 1.4rem;
+        color: #000;
+        &::after {
+            content: "";
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            left: 0;
+            width: 1px;
+            height: 30%;
+            border-left: 1px dotted #000;
+        }
+        i {
+            margin-right: 6px;
+            font-size: 1.6rem;
+        }
+    }
+    &__contact {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #e06d18;
+        padding: 0 40px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+        i {
+            margin-right: 6px;
+            font-size: 2.2rem;
+        }
+    }
+}
 /* Main menu
 ------------------------------------------------------------*/

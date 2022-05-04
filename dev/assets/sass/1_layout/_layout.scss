@@ -1,5 +1,9 @@
 /* layout
 ------------------------------------------------------------*/
+html {
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+}
 body{
 	font-family: $mainFonts;
 	font-size: 1.4rem;
