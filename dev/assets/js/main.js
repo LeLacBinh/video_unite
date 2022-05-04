@@ -17,8 +17,7 @@ $(document).ready(function() {
             breakpoint: 768,
             settings: {
                 arrows: false,
-                centerPadding: '20px',
-                variableWidth: false
+                centerPadding: '20px'
             }
         }]
     });
