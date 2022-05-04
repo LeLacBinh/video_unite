@@ -1,0 +1,137 @@
+.c-point{
+    background-image: linear-gradient(to bottom, #ff8c39, #ff6b01);
+    color: white;
+    text-align: center;
+    padding: 115px 0 86px;
+    max-width: 100%;
+    overflow: hidden;
+    &__title{
+        margin-bottom: 73px;
+        h2{
+            font-size: 6rem;
+            letter-spacing: 0.2em;
+            line-height: 1;
+        }
+        p{
+            font-size: 1.9rem;
+            margin-top: 19px;
+            letter-spacing: 0.2em;
+        }
+    }
+    &__list{
+        display: flex;
+        counter-reset: point;
+        margin-bottom: 78px;
+    }
+    &__item{
+        width: 29%;
+        &:not(:last-child){
+            margin-right: calc((100% - (29% * 3)) / 2);
+        }
+        p{
+            line-height: 1.5;
+            letter-spacing: 0.2em;
+            font-size: 2.2rem;
+        }
+    }
+    &__count{
+        font-size: 2.5rem;
+        letter-spacing: 0.25em;
+        line-height: 1;
+        &::after{
+            counter-increment: point;
+            content: "0" counter(point);
+            display: block;
+            font-size: 9rem;
+            letter-spacing: 0.1em;
+            line-height: 1;
+        }
+    }
+    &__image{
+        max-width: 94%;
+        height: 325px;
+        transform: skew(-10deg) rotate(-8deg);
+        position: relative;
+        margin: 30px auto 65px;
+        position: relative;
+        z-index: 2;
+        &::before{
+            z-index: -1;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            right: -15px;
+            bottom: -15px;
+            background-color: black;
+            opacity: 0.3;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: skew(7deg) scale(1.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__image-box{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    &__desc{
+        font-size: 1.9rem;
+        letter-spacing: 0.25em;
+        line-height: 1.83;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-point{
+        padding: 40px 0;
+        &__title{
+            margin-bottom: 40pxpx;
+            h2{
+                font-size: 2.2rem;
+                letter-spacing: 0.2em;
+                line-height: 1;
+            }
+            p{
+                font-size: 1.3rem;
+                margin-top: 18px;
+                letter-spacing: 0.15em;
+            }
+        }
+        &__list{
+            flex-wrap: wrap;
+        }
+        &__item{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 370px;
+            &:not(:last-child){
+                margin-right: auto;
+                margin-bottom: 60px;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+        }
+        &__count{
+            font-size: 2.2rem;
+            &::after{
+                font-size: 6rem;
+            }
+        }
+        &__image{
+            height: 60vw;
+            max-height: 377px;
+        }
+        &__desc{
+            font-size: 1.6rem;
+        }
+    }
+}
