@@ -4,6 +4,7 @@
     font-size: 4.5rem;
     color: #fff;
     letter-spacing: 9px;
+    text-align: center;
     &::before,
     &:after {
         content: "";
@@ -20,6 +21,15 @@
         background-color: #000;
         bottom: 0;
         left: 50%;
+    }
+    &--black{
+        color: #000;
+        &::before {
+            background-color: #000;
+        }
+        &::after {
+            background-color: #ff8c39;
+        }
     }
 }
 
