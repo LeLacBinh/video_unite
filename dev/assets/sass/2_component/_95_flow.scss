@@ -1,5 +1,4 @@
 .c-flow {
-    padding: 155px 0;
     &--blue {
         .c-flow__number {
             background: transparent;
@@ -27,12 +26,12 @@
     }
     &__number {
         background: linear-gradient(to bottom, #ffc559, #ffa603);
-        width: 255px;
+        width: 273px;
         height: auto;
         display: inline-flex;
+        -webkit-box-align: stretch;
         align-items: center;
-        justify-content: center;
-        align-items: stretch;
+        justify-content: flex-end;
         &::before {
             color: #ffb42a;
             font-family: 'Montserrat', sans-serif;
@@ -47,7 +46,7 @@
     }
     &__item {
         display: flex;
-        margin-bottom: 40px;
+        margin-bottom: 28px;
         border: 1px solid #dcdcdc;
         &:nth-child(even) {
             .c-flow__number {
@@ -59,7 +58,7 @@
         }
     }
     &__content {
-        padding: 45px 60px;
+        padding: 55px 44px;
         flex: 1;
     }
     &__heading {
@@ -69,7 +68,8 @@
     &__desc {
         font-size: 1.8rem;
         letter-spacing: 6px;
-        margin-top: 14px;
+        margin-top: 21px;
+        line-height: 2;
     }
 }
 

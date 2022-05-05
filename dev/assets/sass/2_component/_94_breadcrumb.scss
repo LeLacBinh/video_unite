@@ -1,0 +1,31 @@
+.c-breadcrumb {
+    display: flex;
+    padding: 9px 0;
+    letter-spacing: 2px;
+    li {
+        position: relative;
+        padding-left: 35px;
+        &:first-child {
+            padding-left: 0;
+            a {
+                color: #000;
+            }
+            &:before {
+                content: '';
+            }
+        }
+        &:before {
+            color: #ff8326;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            content: "\f105";
+            font-family: 'FontAwesome';
+            font-size: 1.3rem;
+        }
+        a {
+            color: #ccc;
+        }
+    }
+}
