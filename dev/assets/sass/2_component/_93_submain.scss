@@ -1,0 +1,83 @@
+.c-submain {
+    line-height: 1;
+    display: flex;
+    &__box1 {
+        display: flex;
+        .c-submain__img2,
+        .c-submain__img3 {
+            flex: 1;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__content {
+        color: #fff;
+        width: 32%;
+        padding: 99px 0 58px;
+        h2 {
+            font-family: CerebriSansBook;
+            line-height: 1;
+            font-size: 7.5rem;
+            letter-spacing: 18px;
+            font-weight: 400;
+        }
+        p {
+            margin-top: 38px;
+            font-size: 1.8rem;
+            line-height: 2;
+            letter-spacing: 6px;
+        }
+    }
+    &__picture {
+        position: absolute;
+        width: 61.5%;
+        max-width: 1100px;
+        top: 0;
+        right: 0;
+    }
+    &__pro {
+        color: #8fa5ef;
+        display: inline-block;
+        font-family: Magnite;
+        font-size: 14rem;
+        margin-top: 14px;
+        margin-left: -75px;
+        text-align: right;
+        transform: rotate(-7deg);
+        letter-spacing: 6px;
+        line-height: 1;
+        span {
+            &:last-child {
+                display: block;
+                margin-top: -32px;
+                margin-right: -63px;
+                transform: rotate(-11deg);
+            }
+        }
+    }
+    &__scroll {
+        color: #000;
+        border-right: 1px solid #000;
+        position: absolute;
+        bottom: -242px;
+        right: 99px;
+        padding: 0 13px 65px;
+        span {
+            writing-mode: vertical-lr;
+            font-size: 2rem;
+            letter-spacing: 6px;
+        }
+        &::before {
+            content: "";
+            right: -44px;
+            bottom: 0;
+            position: absolute;
+            z-index: -1;
+            width: 290px;
+            height: 290px;
+            border: 5px solid #8fa5ef;
+            transform: rotate(45deg);
+        }
+    }
+}

@@ -1,20 +1,38 @@
-.c-pick-up{
+.c-pick-up {
     position: relative;
-    &__slide{
+    &--blue {
+        .c-pick-up__slide {
+            .slick-dots {
+                .slick-active {
+                    button::before {
+                        color: #77b0ea;
+                    }
+                }
+            }
+        }
+        .c-post {
+            &--blue:hover {
+                border-color: #67b0fa;
+            }
+        }
+    }
+    &__slide {
         padding-bottom: 60px;
         .slick-slide {
             // padding: 0 27px;
             // padding: 0 2vw;
         }
-        .slick-dots{
+        .slick-dots {
             bottom: 0;
-            li,button,button::before{
+            li,
+            button,
+            button::before {
                 width: 30px;
                 height: 30px;
             }
-            button{
-                &::before{
-                    content:'⬤';
+            button {
+                &::before {
+                    content: '⬤';
                     font-size: 1.5rem;
                     // top: 50%;
                     // left: 50%;
@@ -26,9 +44,9 @@
                     align-items: center;
                 }
             }
-            .slick-active{
-                button{
-                    &::before{
+            .slick-active {
+                button {
+                    &::before {
                         font-size: 2rem;
                         color: #fc9045;
                     }
@@ -36,25 +54,25 @@
             }
         }
     }
-    &__item{
+    &__item {
         transform: scale(0.8);
-        opacity: 0.6;
+        opacity: 0.2;
         transition: 0.3s all;
-        &:not(.slick-center){
-            .c-post{
+        &:not(.slick-center) {
+            .c-post {
                 box-shadow: none;
             }
-            a{
+            a {
                 pointer-events: none;
             }
         }
-        &.slick-center{
+        &.slick-center {
             opacity: 1;
             transform: scale(1);
         }
     }
-    &__arrows{
-        .arrow{
+    &__arrows {
+        .arrow {
             position: absolute;
             width: 64px;
             height: 64px;
@@ -65,24 +83,24 @@
             color: #fff;
             font-size: 2.2rem;
             cursor: pointer;
-            &.prev,&.next{
+            &.prev,
+            &.next {
                 top: 50%;
                 transform: translateY(-50%);
             }
-            &.prev{
+            &.prev {
                 left: 17%;
             }
-            &.next{
+            &.next {
                 right: 17%;
             }
         }
-
     }
 }
 
-@media screen and (max-width: 768px){
-    .c-pick-up{
-        &__item{
+@media screen and (max-width: 768px) {
+    .c-pick-up {
+        &__item {
             width: 70vw;
             max-width: 300px;
         }

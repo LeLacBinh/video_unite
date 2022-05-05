@@ -1,0 +1,26 @@
+.c-btndark {
+    display: inline-block;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    color: white;
+    background-color: #211d1c;
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    padding: 20px 0 20px 72px;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid transparent;
+        border-top-color: white;
+        border-right-color: white;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        pointer-events: none;
+    }
+}

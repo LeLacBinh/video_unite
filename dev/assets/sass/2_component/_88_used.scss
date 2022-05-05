@@ -1,0 +1,47 @@
+.c-used {
+    &__header {
+        color: #fff;
+    }
+    &__body {
+        position: relative;
+        z-index: 3;
+        margin-top: 57px;
+        border-radius: 15px;
+        background: #fff;
+        padding: 78px;
+        &::after {
+            content: "";
+            background: linear-gradient(to top, #3b9ae0, #5221ed);
+            transform: rotate(45deg);
+            right: -311px;
+            top: -130px;
+            position: absolute;
+            z-index: 0;
+            width: 175px;
+            height: 175px;
+        }
+    }
+    table {
+        border-collapse: collapse;
+        border: 5px solid #ccc;
+        width: 100%;
+        border-spacing: 0;
+    }
+    tr {
+        border-bottom: 1px solid #ccc;
+    }
+    th {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        border-right: 1px solid #ccc;
+        padding: 40px 27px;
+        width: 30%;
+        text-align: left;
+    }
+    td {
+        text-align: left;
+        padding: 0 33px;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+}
