@@ -64,3 +64,16 @@
         }
     }
 }
+
+.c-desc{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+@media screen and (max-width: 768px){
+    .c-desc{
+        font-size: 1.6rem;
+    }
+}

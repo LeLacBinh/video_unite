@@ -1,0 +1,211 @@
+.p-intel{
+    &1{
+        padding-top: 78px;
+        padding-bottom: 155px;
+        .c-titleline{
+            margin-bottom: 51px;
+        }
+        &__message{
+            position: relative;
+            z-index: 2;
+            margin-top: 153px;
+            &::before{
+                content: '';
+                display: block;
+                height: 648px;
+                width: 62.38vw;
+                max-width: 1020px;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 0;
+                background-image: linear-gradient(to bottom, #ff8c39, #ff6b01);
+            }
+        }
+        &__image-list{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 152px;
+            .image{
+                position: relative;
+                &::before{
+                    content: '';
+                    display: block;
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &--1{
+                    width: 59%;
+                    transform: translateY(11.7%);
+                    &::before{
+                        padding-bottom: 88.5%;
+                    }
+                }
+                &--2{
+                    width: 37.83%;
+                    transform: translateY(-16.7%);
+                    &::before{
+                        padding-bottom: 86.12%;
+                    }
+                }
+                &--3{
+                    position: absolute;
+                    width: 23%;
+                    right: 4.1%;
+                    top: 61.7%;
+                    &::before{
+                        padding-bottom: 85.9%;
+                    }
+                }
+            }
+        }
+        &__content{
+            font-size: 1.9rem;
+            .text{
+                line-height: 1.85;
+                margin-top: 56px;
+                letter-spacing: 0.26em;
+            }
+        }
+    }
+    &2{
+        background: url(../img/work.png) no-repeat center;
+        background-size: cover;
+        z-index: 2;
+        position: relative;
+        padding-top: 104px;
+        padding-bottom: 117px;
+        &::before{
+            position: absolute;
+            display: block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom,#ffd801, #ffb21c );
+            opacity: 0.5;
+            z-index: -1;
+        }
+        .c-section-title{
+            margin-bottom: 114px;
+        }
+        &__head{
+            color: white;
+        }
+        &__body{
+            background-color: white;
+            padding: 60px 0 67px;
+            position: relative;
+            .object {
+                position: absolute;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &::before{
+                    display: block;
+                    content: '';
+                }
+                &--1{
+                    right: 90px; 
+                    top: -39px;
+                    width: 27.7%;
+                    max-width: 452px;
+                    &::before{
+                        padding-bottom: 86.09%;
+                    }
+                }
+                &--2{
+                    width: 16.3%;
+                    max-width: 267px;
+                    right: 0;
+                    top: 33.5%;
+                    &::before{
+                        padding-bottom: 86.5%;
+                    }
+                }
+                &--3{
+                    width: 20.18%;
+                    max-width: 330px;
+                    right: 150px;
+                    bottom: -40px;
+                    &::before{
+                        padding-bottom: 86%;
+                    }
+                }
+            }
+            p{
+                max-width: 812px;
+                width: 67.67%;
+                font-size: 1.9rem;
+                line-height: 1.9;
+                letter-spacing: 0.25em;
+                &:not(:last-child){
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+    &3{
+        padding-top: 143px;
+        padding-bottom: 146px;
+        &__list{
+            display: flex;
+            li{
+                width: 25%;
+                text-align: center;
+                &:nth-child(even){
+                    margin-top: 177px;
+                    .image{
+                        background-image: linear-gradient(to bottom, #ffd902, #ffb21c);
+                    }
+                }
+                .image{
+                    background-image: linear-gradient(to bottom, #ff8b36, #ff6c02);
+                    width: 76%;
+                    position: relative;
+                    transform: rotate(45deg);
+                    margin: auto;
+                    &::before{
+                        content: '';
+                        display: block;
+                        padding-bottom: 100%;
+                    }
+                    img{
+                        position: absolute;
+                        max-width: 90%;
+                        max-height: 90%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) rotate(-45deg);
+                    }
+                }
+                h4{
+                    margin-top: 76px;
+                    font-size: 2.6rem;
+                }
+                p{
+                    line-height: 1.6;
+                    letter-spacing: 0.2em;
+                    font-size: 1.6rem;
+                    margin-top: 27px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    &4{
+        padding-top: 92px;
+        background-color: #f0f0f0;
+        .c-section-title{
+            margin-bottom: 73px;
+        }
+    }
+}
