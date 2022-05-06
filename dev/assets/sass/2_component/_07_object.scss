@@ -1,0 +1,31 @@
+.c-object{
+    display: block;
+    background-color: #ff8730;
+    color: transparent;
+    font-size: 0;
+    transform: rotate(45deg);
+    &::before{
+        display: block;
+        content: '';
+        padding-bottom: 100%;
+    }
+    &--2{
+        background-color: transparent;
+        border: 8px solid #ff9147;
+    }
+    &--3{
+        background-image: linear-gradient(to bottom,#ffd801, #ffb21c );
+    }
+    &--4{
+        background-image: linear-gradient(to bottom,#fe9402, #ffae2b );
+    }
+    &--4{
+        background-image: linear-gradient(to bottom,#fed700, #ffb21e );
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-object{
+        opacity: 0.3;
+    }
+}
