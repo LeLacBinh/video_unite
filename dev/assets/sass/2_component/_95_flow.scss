@@ -1,6 +1,7 @@
 .c-flow {
     &--blue {
         .c-flow__number {
+            justify-content: flex-end;
             background: transparent;
             &::before {
                 color: #fff;
@@ -22,7 +23,7 @@
     }
     &__body {
         counter-reset: section;
-        margin-top: 66px;
+        margin-top: 70px;
     }
     &__number {
         background: linear-gradient(to bottom, #ffc559, #ffa603);
@@ -31,7 +32,7 @@
         display: inline-flex;
         -webkit-box-align: stretch;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         &::before {
             color: #ffb42a;
             font-family: 'Montserrat', sans-serif;
@@ -46,7 +47,7 @@
     }
     &__item {
         display: flex;
-        margin-bottom: 28px;
+        margin-bottom: 38px;
         border: 1px solid #dcdcdc;
         &:nth-child(even) {
             .c-flow__number {
@@ -58,7 +59,7 @@
         }
     }
     &__content {
-        padding: 55px 44px;
+        padding: 50px 44px;
         flex: 1;
     }
     &__heading {
@@ -78,12 +79,19 @@
         &__item {
             flex-direction: column;
         }
+        &__desc {
+            font-size: 1.6rem;
+            margin-top: 10px;
+        }
         &__number {
             padding: 15px 25px;
-            margin-bottom: 15px;
+            margin-bottom: 0;
             line-height: 1;
             width: 100%;
             display: block;
+            &::before {
+                font-size: 6.5em;
+            }
         }
         &__content {
             padding: 15px 25px;

@@ -1,0 +1,117 @@
+.c-preamble {
+    &__header {
+        margin-bottom: 90px;
+    }
+    &__sub {
+        margin-top: 48px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 2.6rem;
+        letter-spacing: 5px;
+        line-height: 2;
+    }
+    &__item {
+        display: flex;
+    }
+    &__content {
+        position: relative;
+        padding: 46px 41px 46px 51px;
+        background-color: #ff8932;
+        width: 55.7%;
+        &::before {
+            content: "";
+            left: -233px;
+            top: 141px;
+            position: absolute;
+            z-index: -1;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to top right, #ffaf2d, #ff9401);
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            left: -265px;
+            bottom: -8px;
+            position: absolute;
+            z-index: -1;
+            width: 270px;
+            height: 270px;
+            background: linear-gradient(to top right, #ffd800, #ffb21d);
+            transform: rotate(45deg);
+        }
+    }
+    &__desc {
+        margin-top: 24px;
+        font-size: 1.8rem;
+        line-height: 2;
+        letter-spacing: 6px;
+    }
+    &__picture {
+        position: relative;
+        align-items: baseline;
+        margin: 27px 0;
+        flex: 1;
+        line-height: 1;
+        &::before {
+            content: "";
+            right: -236px;
+            top: -106px;
+            position: absolute;
+            z-index: -1;
+            width: 295px;
+            height: 295px;
+            border: 5px solid #ff9401;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            right: -257px;
+            top: 94px;
+            position: absolute;
+            z-index: -1;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(to top right, #ffd800, #ffb21d);
+            transform: rotate(45deg);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .slick-list {
+        overflow: initial;
+    }
+    .slick-dots {
+        bottom: -15px;
+        width: auto;
+        right: 0;
+        li {
+            &.slick-active {
+                button {
+                    &::before {
+                        color: #ff8932;
+                        font-size: 22px;
+                    }
+                }
+            }
+            margin: 0 5px;
+            button {
+                &::before {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    &__footer {
+        margin-top: 68px;
+        text-align: center;
+    }
+}

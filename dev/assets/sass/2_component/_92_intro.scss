@@ -25,3 +25,41 @@
         letter-spacing: 6px;
     }
 }
+
+@media only screen and (max-width: 1250px) {
+    .c-intro {
+        &__picture {
+            width: 27%;
+        }
+        &__content {
+            padding-top: 120px;
+            padding-left: 47px;
+            width: 68%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-intro {
+        flex-direction: column;
+        width: 94%;
+        margin: 0 auto;
+        &__subtitle {
+            font-size: 2.2rem;
+            margin: 30px 0 30px;
+        }
+        &__desc {
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+        &__content {
+            width: 100%;
+            padding-left: 0%;
+            order: -1;
+        }
+        &__picture {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}

@@ -22,12 +22,21 @@ $(document).ready(function() {
         }]
     });
 
+    $('.c-preamble__body').slick({
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+
 
     // Header Button Nav
     $(function() {
         $('.c-trigger').on('click', function() {
             $(this).toggleClass('is-active');
             $('.c-header').toggleClass('is-active');
+            $('body').toggleClass('is-active');
             return false;
         });
     });

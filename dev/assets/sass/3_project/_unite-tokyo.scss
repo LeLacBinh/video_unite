@@ -101,17 +101,16 @@
     &9 {
         position: relative;
         padding: 103px 0 93px;
-        background: linear-gradient(to left top, #4cc7bb, #428ec8);
+        background: url('../img/floor-map-image-1.png');
+        background-size: cover;
         &::before {
             content: "";
-            border: 5px solid #dbdbdb;
-            transform: rotate(45deg);
-            left: -49px;
-            top: -21px;
             position: absolute;
-            z-index: 0;
-            width: 175px;
-            height: 175px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left top, rgba(76, 199, 187, .9), rgba(66, 142, 200, .9));
         }
         &::after {
             content: "";
@@ -127,5 +126,66 @@
     }
     &10 {
         padding: 140px 0 146px;
+    }
+    &11 {
+        padding: 120px 0 146px;
+        background-color: #f0f0f0;
+    }
+    &12 {
+        padding: 73px 0 68px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .p-tokyo {
+        &2 {
+            &::after {
+                width: 85%;
+            }
+        }
+        &3 {
+            &::after {
+                top: 275px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .p-tokyo {
+        &2 {
+            &::after {
+                width: 97%;
+                height: 92%;
+            }
+        }
+        &6 {
+            padding: 90px 0 120px;
+        }
+        &7 {
+            &::before {
+                right: -100px;
+                width: 200px;
+                height: 200px;
+            }
+            &::after {
+                width: 100px;
+                height: 100px;
+                right: -56px;
+                top: 131px;
+            }
+        }
+        &9 {
+            &::after {
+                width: 285px;
+                height: 285px;
+            }
+        }
+        &10 {
+            padding: 140px 0 90px;
+        }
+        &11 {
+            padding: 80px 0 80px;
+        }
     }
 }
