@@ -138,6 +138,7 @@
 
 .c-pointblue {
     position: relative;
+    z-index: 3;
     color: #fff;
     &::before {
         content: "";
@@ -147,7 +148,7 @@
         left: -38px;
         bottom: 41px;
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         width: 115px;
         height: 115px;
     }
@@ -185,5 +186,31 @@
         font-size: 2rem;
         line-height: 1.8;
         letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-pointblue {
+        &__title {
+            font-size: 2rem;
+        }
+        &__body {
+            margin-top: 60px;
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        &__img {
+            margin: 25px auto;
+            width: 30%;
+        }
+        &__footer {
+            margin-top: 60px;
+        }
+        &__desc {
+            font-size: 1.6rem;
+        }
     }
 }

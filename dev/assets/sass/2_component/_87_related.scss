@@ -1,0 +1,55 @@
+.c-related {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        padding: 72px 20px;
+        text-align: center;
+        width: 48%;
+        border-width: 5px;
+        border-style: solid;
+        &--company {
+            border-color: #6e36f1;
+        }
+        &--recruit {
+            border-color: #58a5e2;
+        }
+    }
+    &__title {
+        font-family: CerebriSansBook;
+        line-height: 1;
+        font-size: 6.4rem;
+        letter-spacing: 15px;
+        font-weight: 400;
+        margin-bottom: 31px;
+    }
+    &__desc {
+        font-size: 2rem;
+        letter-spacing: 4px;
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .c-related {
+        &__title {
+            font-size: 5rem;
+        }
+        &__desc {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-related {
+        flex-direction: column;
+        &__title {
+            font-size: 3.5rem;
+        }
+        &__item {
+            padding: 50px 15px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}

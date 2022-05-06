@@ -1,27 +1,28 @@
-.c-contactForm{
-   max-width: 100%;
+.c-contactForm {
+    min-height: 1146px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
     padding: 83px 0;
     box-shadow: 0 0 10px 5px #80808042;
-    &__row{
+    &__row {
         margin: 0 auto;
         max-width: 1060px;
         display: flex;
         justify-content: space-between;
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 47px;
         }
-        &--submit{
+        &--submit {
             justify-content: center;
             margin-top: 60px;
-            .submit-btn{
+            .submit-btn {
                 max-width: 380px;
                 width: 100%;
                 position: relative;
-                &::after{
-                    content:'';
+                &::after {
+                    content: '';
                     position: absolute;
                     display: block;
                     width: 12px;
@@ -34,7 +35,7 @@
                     transform: translateY(-50%) rotate(45deg);
                     pointer-events: none;
                 }
-                input[type=submit]{
+                input[type=submit] {
                     width: 100%;
                     text-align: center;
                     color: white;
@@ -50,12 +51,12 @@
             }
         }
     }
-    &__label{
+    &__label {
         width: calc(100% - 62.26% - 30px);
-        .u-required{
+        .u-required {
             display: flex;
             align-items: center;
-            &::after{
+            &::after {
                 content: '必須';
                 display: inline-block;
                 color: white;
@@ -67,15 +68,17 @@
                 margin-left: 16px;
             }
         }
-        label{
+        label {
             font-weight: bold;
             font-size: 2.5rem;
             letter-spacing: 0.27em;
         }
     }
-    &__input{
+    &__input {
         width: 62.26%;
-        input,select,textarea{
+        input,
+        select,
+        textarea {
             color: #b9b9b9;
             background-color: #f7f7f7;
             border: none;
@@ -89,50 +92,59 @@
 }
 
 @media screen and (max-width: 768px) {
-    .c-contactForm{
+    .c-contactForm {
         padding: 30px 15px 50px;
-        &__row{
+        &__row {
             flex-wrap: wrap;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 20px;
             }
-            &--submit{
-                .submit-btn{
+            &--submit {
+                .submit-btn {
                     width: 60%;
                     min-width: 180px;
-                    &::after{
+                    &::after {
                         width: 8px;
                         height: 8px;
                     }
-                    input[type=submit]{
+                    input[type=submit] {
                         font-size: 1.6rem;
                         padding: 10px;
                     }
                 }
-                
             }
         }
-        &__label,&__input{
+        &__label,
+        &__input {
             width: 100%;
         }
-        &__label{
+        &__label {
             margin-bottom: 10px;
-            .u-required{
-                &::after{
+            .u-required {
+                &::after {
                     font-size: 1.2rem;
                     padding: 3px 6px;
                 }
             }
-            label{
+            label {
                 font-size: 1.8rem;
             }
         }
-        &__input{
-            input,select,textarea{
+        &__input {
+            input,
+            select,
+            textarea {
                 padding: 15px 10px;
                 font-size: 1.6rem;
-                box-shadow: 3px 2px 5px #80808042;;
+                box-shadow: 3px 2px 5px #80808042;
+                ;
             }
         }
+    }
+}
+
+.c-form1 {
+    &__body {
+        margin-top: 88px;
     }
 }

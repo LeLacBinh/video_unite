@@ -166,7 +166,11 @@
                 transform: translateX(0%);
             }
         }
+        &__logo {
+            margin-left: 15px;
+        }
         &__menu {
+            overflow: auto;
             transition: all .3s ease-in-out;
             padding: 0 30px;
             background: #fff;
@@ -223,5 +227,6 @@
     }
     .c-trigger {
         display: block;
+        margin-right: 15px;
     }
 }

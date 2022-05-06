@@ -1,4 +1,17 @@
 .c-used {
+    position: relative;
+    z-index: 3;
+    &::before {
+        content: "";
+        border: 5px solid #dbdbdb;
+        transform: rotate(45deg);
+        left: -49px;
+        top: -125px;
+        position: absolute;
+        z-index: 0;
+        width: 175px;
+        height: 175px;
+    }
     &__header {
         color: #fff;
     }
@@ -43,5 +56,43 @@
         padding: 0 33px;
         font-size: 2rem;
         letter-spacing: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-used {
+        &__body {
+            padding: 35px;
+        }
+        &__inner {
+            overflow: auto;
+        }
+        th,
+        td {
+            padding: 20px 27px;
+        }
+        th {
+            font-size: 1.8rem;
+            min-width: 270px;
+        }
+        td {
+            font-size: 1.6rem;
+            min-width: 470px;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .c-used {
+        &::before {
+            width: 100px;
+            height: 100px;
+        }
+        .c-title2 {
+            h2 {
+                font-size: 2.7rem;
+                line-height: 1.8;
+            }
+        }
     }
 }
