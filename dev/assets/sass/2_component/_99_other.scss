@@ -4,14 +4,24 @@
     object-fit: cover;
 }
 
+.c-banner{
+    height: 159px;
+}
+
+@media screen and (max-width: 768px)  {
+    .c-banner{
+        height: 80px;
+    }
+}
+
 .c-pagination{
     display: flex;
     justify-content: center;
     align-items: center;
     .prev,.next{
         display: flex;
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         justify-content: center;
         align-items: center;
         color: white;
@@ -21,7 +31,7 @@
     &__list{
         display: flex;
         align-items: baseline;
-        margin: 0 40px;
+        margin: 0 68px;
         .page-numbers{
             font-size: 3rem;
             color: #b4b4b4;
