@@ -1,4 +1,8 @@
 .p-intel{
+    &__box{
+        max-width: 100%;
+        overflow: hidden;
+    }
     &1{
         padding: 78px 0 155px;
         .c-titleline{
@@ -157,6 +161,8 @@
     }
     &3{
         padding: 143px 0 146px;
+        position: relative;
+        max-width: 100%;
         &__list{
             display: flex;
             li{
@@ -167,6 +173,15 @@
                     .image{
                         background-image: linear-gradient(to bottom, #ffd902, #ffb21c);
                     }
+                    .image_animation{
+                        animation-delay: 4s;
+                    }
+                }
+                &:nth-child(2){
+                    
+                }
+                .image_animation{
+                    animation: intel_item 8s infinite ease-in;
                 }
                 .image{
                     background-image: linear-gradient(to bottom, #ff8b36, #ff6c02);
@@ -198,6 +213,39 @@
                     font-size: 1.6rem;
                     margin-top: 27px;
                     text-align: left;
+                }
+            }
+        }
+        &__objects{
+            .item{
+                position: absolute;
+                &1{
+                    width: 182px;
+                    left: 0;
+                    top: 41%;
+                    transform: translateX(-50%);
+                    animation: intel_obj_01 6s infinite;
+                }
+                &2{
+                    width: 304px;
+                    right: 0;
+                    top: 1.5%;
+                    transform: translate(16%, -8%);
+                    animation: intel_obj_02 6s infinite;
+                }
+                &3{
+                    width: 108px;
+                    right: 0;
+                    top: 19%;
+                    transform: translateX(50%);
+                    animation: intel_obj_03 5s infinite;
+                }
+                &4{
+                    width: 332px;
+                    left: 0;
+                    top: 61%;
+                    transform: translateX(-50%);
+                    animation: intel_obj_04 6s infinite;
                 }
             }
         }
@@ -436,6 +484,7 @@
             }
         }
         &4{
+            position: relative;
             &__list{
                 padding: 0 10px;
             }
@@ -454,5 +503,43 @@
                 }
             }
         }
+    }
+}
+
+@keyframes intel_obj_01 {
+    0%, 100%{
+        top: 41%;
+    }
+    50%{
+        top: calc(41% - 40px)
+    }
+}
+@keyframes intel_obj_02 {
+    0%, 100%{
+        right: 0;
+    }
+    50%{
+        top: 40px
+    }
+}
+@keyframes intel_obj_03 {
+    0%, 100%{
+        top: 19%
+    }
+    50%{
+        top: calc(19% - 40px)
+    }
+}
+@keyframes intel_obj_04 {
+    0%, 100%{
+        top: 61%;
+    }
+    50%{
+        top: calc(61% + 40px)
+    }
+}
+@keyframes intel_item {
+    40%,100%{
+        transform: rotateY(360deg);
     }
 }

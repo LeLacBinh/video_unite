@@ -1,5 +1,6 @@
 .p-company{
     &1{
+        padding-top: 78px;
         text-align: center;
         &__head{
             margin-bottom: 127px;
@@ -189,8 +190,7 @@
                     right: 0;
                     top: 52.6%;
                     transform: translateX(41%);
-                    animation: object_04 infinite 6s;
-                    animation-delay: 3s;
+                    animation: object_04 infinite 6s 3s;
                 }
             }
         }
@@ -344,6 +344,7 @@
 @media screen and (max-width: 768px){
     .p-company{
         &1{
+            padding-top: 40px;
             &__box{
                 width: 80%;
                 max-width: 450px;
