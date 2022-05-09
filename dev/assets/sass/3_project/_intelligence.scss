@@ -276,15 +276,18 @@
                 .image{
                     &--1{
                         width: 85%;
+                        max-height: 400px;
                         margin: 0 auto;
                     }
                     &--2{
                         width: 57%;
+                        max-height: 300px;
                     }
                     &--3{
                         width: 47%;
                         top: 59%;
                         right: 0;
+                        max-height: 250px;
                     }
                 }
             }
@@ -302,7 +305,7 @@
                 margin-bottom: 40px;
             }
             &__body{
-                padding: 40px 0 220px;
+                padding: 40px 10px 220px;
                 p{
                     width: 100%;
                     font-size: 1.6rem;
@@ -315,7 +318,8 @@
                         top: unset;
                         right: 0;
                         bottom: 20px;
-                        width: 200px;
+                        width: 200px!important;
+                        max-width: 50%;
                     }
                     &--2{
                         right: unset;
@@ -346,6 +350,7 @@
                         margin-top: 50px;
                     }
                     .image{
+                        max-width: 160px;
                         img{
                             max-width: 60%;
                             max-height: 60%;
@@ -353,7 +358,7 @@
                     }
                     h4{
                         font-size: 2rem;
-                        margin-top: 30px;
+                        margin-top: 45px;
                     }
                     p{
                         font-size: 1.4rem;
@@ -386,6 +391,65 @@
                     }
                     h4{
                         font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 1350px) {
+    .p-intel{
+        &2{
+            &__body{
+                .object{
+                    &--1{
+                        right: 60px;
+                        width: 26.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .p-intel{
+        &1{
+            &__content{
+                padding: 0 10px;
+            }
+        }
+        &2{
+            &__body{
+                padding-left: 10px;
+            }
+        }
+        &3{
+            &__list{
+                padding: 0 5px;
+                li{
+                    .image{
+                        width: 69%;
+                    }
+                }
+            }
+        }
+        &4{
+            &__list{
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .p-intel{
+        &2{
+            &__body{
+                .object{
+                    &--1{
+                        right: 40px;
                     }
                 }
             }

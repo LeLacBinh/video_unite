@@ -173,3 +173,13 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px){
+    .p-result{
+        &1{
+            &__list{
+                padding: 0 10px;
+            }
+        }
+    }
+}

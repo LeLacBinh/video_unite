@@ -365,9 +365,11 @@
                 top: unset;
                 bottom: 0;
                 transform: translateY(80px);
+                max-width: 250px;
             }
         }
         &2{
+            z-index: 1;
             &__profile{
                 margin: 40px 0;
                 li{
@@ -502,6 +504,26 @@
                 p{
                     font-size: 1.4rem;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 700px) {
+    .p-company{
+        &1{
+            &__image{
+                transform: translateY(130px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .p-company{
+        &4{
+            &__bussiness{
+                padding: 0 10px;
             }
         }
     }
