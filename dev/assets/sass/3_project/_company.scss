@@ -530,50 +530,53 @@
     }
 }
 
-@keyframes object_01 {
-    0%{
-        top: 31.5%;
+@media screen and (min-width: 1200px){
+    @keyframes object_01 {
+        0%{
+            top: 31.5%;
+        }
+        50%{
+            top: calc(31.5% + 40px);
+        }
+        100%{
+            top: 31.5%;
+        }
     }
-    50%{
-        top: calc(31.5% + 40px);
+    
+    @keyframes object_02 {
+        0%{
+            top: 5%;
+        }
+        50%{
+            top: calc(5% + 40px);
+        }
+        100%{
+            top: 5%;
+        }
     }
-    100%{
-        top: 31.5%;
+    
+    @keyframes object_03{
+        0%{
+            right: 8.5%;
+        }
+        50%{
+            right: calc(8.5% + 40px);
+        }
+        100%{
+            right: 8.5%;
+        }
+    }
+    
+    @keyframes object_04{
+        0%{
+            right: 0;
+        }
+        50%{
+            right: 40px;
+        }
+        100%{
+            right: 0;
+        }
     }
 }
 
-@keyframes object_02 {
-    0%{
-        top: 5%;
-    }
-    50%{
-        top: calc(5% + 40px);
-    }
-    100%{
-        top: 5%;
-    }
-}
-
-@keyframes object_03{
-    0%{
-        right: 8.5%;
-    }
-    50%{
-        right: calc(8.5% + 40px);
-    }
-    100%{
-        right: 8.5%;
-    }
-}
-
-@keyframes object_04{
-    0%{
-        right: 0;
-    }
-    50%{
-        right: 40px;
-    }
-    100%{
-        right: 0;
-    }
-}
