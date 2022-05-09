@@ -18,6 +18,10 @@
     }
     &__slide {
         padding-bottom: 80px;
+        .slick-list{
+            padding-top: 20px!important;
+            padding-bottom: 20px!important;
+        }
         .slick-slide {
             // padding: 0 27px;
             // padding: 0 2vw;

@@ -189,3 +189,23 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+    .p-tokyo{
+        &7{
+            &::before{
+                top: -160px;
+                width: 307px;
+            }
+            &::after{
+                opacity: 0.4;
+            }
+        }
+        &9{
+            &::after{
+                width: 385px;
+                height: 385px;
+            }
+        }
+    }
+}

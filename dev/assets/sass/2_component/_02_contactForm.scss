@@ -53,6 +53,9 @@
     }
     &__label {
         width: calc(100% - 62.26% - 30px);
+        p{
+            padding-top: 22.5px;
+        }
         .u-required {
             display: flex;
             align-items: center;
@@ -120,6 +123,9 @@
         }
         &__label {
             margin-bottom: 10px;
+            p{
+                padding-top: 15px;
+            }
             .u-required {
                 &::after {
                     font-size: 1.2rem;
@@ -146,5 +152,23 @@
 .c-form1 {
     &__body {
         margin-top: 88px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .c-contactForm{
+        max-width: calc(100% - 20px);
+        padding-left: 10px;
+        padding-right: 10px;
+        &__label{
+            label{
+                font-size: 1.8rem;
+            }
+            .u-required{
+                &::after{
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }
