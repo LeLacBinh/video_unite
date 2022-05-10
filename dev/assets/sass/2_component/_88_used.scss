@@ -8,9 +8,10 @@
         right: -441px;
         bottom: 104px;
         position: absolute;
-        z-index: -1;
-        width: 490px;
-        height: 490px;
+        z-index: 0;
+        width: 175px;
+        height: 175px;
+        animation: 15s tokyo_rotate infinite linear;
     }
     &__header {
         color: #fff;
@@ -30,8 +31,9 @@
             top: -203px;
             position: absolute;
             z-index: 0;
-            width: 205px;
-            height: 205px;
+            width: 175px;
+            height: 175px;
+            animation: 15s tokyo_rotate infinite linear;
         }
     }
     &--custom {

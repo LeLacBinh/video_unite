@@ -30,6 +30,7 @@
             z-index: -1;
             width: 63px;
             height: 63px;
+            animation: tokyo_3_01 6s infinite;
         }
     }
     &4 {
@@ -46,6 +47,7 @@
             height: 438px;
             background: linear-gradient(to right bottom, #4189c7, #47abc2);
             transform: rotate(45deg);
+            animation: tokyo_4_01 6s infinite;
         }
         &::after {
             content: "";
@@ -57,6 +59,7 @@
             z-index: 0;
             width: 115px;
             height: 115px;
+            animation: tokyo_rotate 15s infinite linear;
         }
     }
     &5 {
@@ -82,6 +85,7 @@
             height: 438px;
             background: linear-gradient(to top right, #4cc7bb, #428ec8);
             transform: rotate(45deg);
+            animation: 10s tokyo_7_01 infinite;
         }
         &::after {
             content: "";
@@ -93,6 +97,7 @@
             height: 320px;
             border: 5px solid #fff;
             transform: rotate(45deg);
+            animation: 10s tokyo_7_02 infinite;
         }
     }
     &8 {
@@ -122,6 +127,7 @@
             z-index: 0;
             width: 485px;
             height: 485px;
+            animation: 15s tokyo_rotate infinite linear;
         }
     }
     &10 {
@@ -186,6 +192,66 @@
         }
         &11 {
             padding: 80px 0 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+    .p-tokyo{
+        &7{
+            &::before{
+                top: -160px;
+                width: 307px;
+            }
+            &::after{
+                opacity: 0.4;
+            }
+        }
+        &9{
+            &::after{
+                width: 385px;
+                height: 385px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1250px){
+    @keyframes tokyo_3_01 {
+        0%, 100%{
+            right: -30px;
+        }
+        50% {
+            right: 0;
+        }
+    }
+    @keyframes tokyo_4_01 {
+        0%, 100%{
+            transform: rotate(45deg) scale(1);
+        }
+        50% {
+            transform: rotate(45deg) scale(0.9);
+        }
+    }
+    @keyframes tokyo_rotate {
+        100%{
+            transform: rotate(225deg);
+        }
+    }
+    @keyframes tokyo_7_01{
+        0%, 100% {
+            top: -16px;
+        }
+        50% {
+            top: -56px;
+        }
+    }
+    @keyframes tokyo_7_02{
+        0%, 100% {
+            top: 267px;
+        }
+        50% {
+            top: 307px;
         }
     }
 }

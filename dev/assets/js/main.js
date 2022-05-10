@@ -2,6 +2,12 @@ $(document).ready(function() {
     // Close accordion JS
     $('.c-faq__inner').slideUp();
     // Slick Slider
+    // Add smooth scrolling to all links
+    $(".c-back").on('click', function(event) {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
     $('.c-pick-up__slide').slick({
         infinite: true,
         slidesToShow: 3,
