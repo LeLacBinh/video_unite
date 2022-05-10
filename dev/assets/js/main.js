@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    // Add smooth scrolling to all links
+  $(".c-back").on('click', function(event) {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+  });
     $('.c-pick-up__slide').slick({
         infinite: true,
         slidesToShow: 3,
