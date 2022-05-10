@@ -11,6 +11,7 @@
         z-index: 0;
         width: 175px;
         height: 175px;
+        animation: 15s tokyo_rotate infinite linear;
     }
     &__header {
         color: #fff;
@@ -32,6 +33,7 @@
             z-index: 0;
             width: 175px;
             height: 175px;
+            animation: 15s tokyo_rotate infinite linear;
         }
     }
     table {

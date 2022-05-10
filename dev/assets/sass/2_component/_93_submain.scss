@@ -78,6 +78,7 @@
             height: 290px;
             border: 5px solid #8fa5ef;
             transform: rotate(45deg);
+            animation: submain_scroll 10s infinite linear;
         }
     }
 }
@@ -138,6 +139,20 @@
             position: relative;
             top: 25px;
             right: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    @keyframes submain_scroll {
+        // 0%, 100%{
+        //     transform: rotate(25deg);
+        // }
+        // 50%{
+        //     transform: rotate(65deg);
+        // }
+        100%{
+            transform: rotate(225deg);
         }
     }
 }
