@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // Close accordion JS
+    $('.c-faq__inner').slideUp();
+    // Slick Slider
     $('.c-pick-up__slide').slick({
         infinite: true,
         slidesToShow: 3,
@@ -48,4 +51,15 @@ $(document).ready(function() {
 
     // --- AOS ---
     AOS.init();
+
+
+    $('.c-faq__icon').each(function() {
+
+        $(this).click(function() {
+
+            $(this).toggleClass("is-active");
+            $(this).parents('.c-faq__item').find('.c-faq__inner').slideToggle();
+
+        });
+    });
 })

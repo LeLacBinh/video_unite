@@ -1,0 +1,40 @@
+.c-table1 {
+    border-collapse: collapse;
+    border: 5px solid #ccc;
+    width: 100%;
+    border-spacing: 0;
+    tr {
+        border-bottom: 1px solid #ccc;
+    }
+    th {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        border-right: 1px solid #ccc;
+        padding: 40px 27px;
+        width: 30%;
+        text-align: left;
+    }
+    td {
+        text-align: left;
+        padding: 0 33px;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-table1 {
+        th,
+        td {
+            padding: 20px 27px;
+        }
+        th {
+            font-size: 1.8rem;
+            min-width: 270px;
+        }
+        td {
+            font-size: 1.6rem;
+            min-width: 470px;
+        }
+    }
+}

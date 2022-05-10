@@ -172,7 +172,7 @@
         &__menu {
             overflow: auto;
             transition: all .3s ease-in-out;
-            padding: 0 30px;
+            padding: 0 30px 20px;
             background: #fff;
             width: 100%;
             height: calc(100% - 70px);
@@ -228,5 +228,46 @@
     .c-trigger {
         display: block;
         margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .c-header {
+        height: 60px;
+        &__logo {
+            margin-left: 10px;
+            max-width: 100px;
+        }
+        &__nav {
+            ul {
+                a {
+                    padding: 15px 0;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+        .c-trigger {
+            width: 30px;
+            height: 26px;
+            margin-right: 10px;
+            span {
+                height: 2px;
+                &:nth-of-type(2) {
+                    top: 12px;
+                }
+            }
+        }
+        #menu05 {
+            &.is-active {
+                span {
+                    &:nth-of-type(1) {
+                        transform: translateY(10px) rotate(-45deg);
+                    }
+                    &:nth-of-type(3) {
+                        transform: translateY(-14px) rotate(45deg);
+                    }
+                }
+            }
+        }
     }
 }

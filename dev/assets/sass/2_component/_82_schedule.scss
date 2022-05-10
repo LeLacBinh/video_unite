@@ -1,0 +1,124 @@
+.c-schedule {
+    &__header {
+        position: relative;
+    }
+    &__body {
+        margin-top: 87px;
+        padding-bottom: 59px;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            left: -218px;
+            bottom: 131px;
+            position: absolute;
+            z-index: -1;
+            width: 345px;
+            height: 345px;
+            background: linear-gradient(to top right, #ffb21c, #ffd700);
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            left: -42px;
+            bottom: -78px;
+            position: absolute;
+            z-index: -2;
+            width: 245px;
+            height: 245px;
+            border: 5px solid #fff;
+            transform: rotate(45deg);
+        }
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 77px;
+        &:nth-child(3) {
+            position: relative;
+            &::after {
+                content: "";
+                background: linear-gradient(to top right, #ffb21c, #ffd700);
+                transform: rotate(45deg);
+                left: -25.3%;
+                top: -16%;
+                position: absolute;
+                z-index: -1;
+                width: 115px;
+                height: 115px;
+            }
+        }
+    }
+    &__picture {
+        width: 34.5%;
+        min-height: 241px;
+        border: 10px solid #f0f0f0;
+        background-color: #fff;
+    }
+    &__content {
+        flex: 1;
+        margin-left: 60px;
+        margin-top: 8px;
+    }
+    &__heading {
+        display: flex;
+        align-items: center;
+        padding-bottom: 19px;
+        border-bottom: 1px solid #fff;
+        .fas {
+            font-size: 5rem;
+        }
+    }
+    &__time {
+        font-size: 3rem;
+        letter-spacing: 8px;
+        margin-left: 27px;
+        font-weight: 500;
+    }
+    &__txt {
+        padding: 24px 50px 24px 8px;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 6px;
+    }
+    &__desc {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        letter-spacing: 6px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-schedule {
+        &__heading {
+            .fas {
+                font-size: 3.5rem;
+            }
+        }
+        &__time {
+            font-size: 2.5rem;
+        }
+        &__txt {
+            padding: 24px 0;
+        }
+        &__title {
+            font-size: 1.8rem;
+        }
+        &__desc {
+            font-size: 1.6rem;
+        }
+        &__item {
+            margin-bottom: 60px;
+            flex-direction: column;
+        }
+        &__picture {
+            width: 100%;
+            min-height: 370px;
+        }
+        &__content {
+            margin-top: 25px;
+            margin-left: 0;
+        }
+    }
+}

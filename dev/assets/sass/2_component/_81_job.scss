@@ -1,0 +1,31 @@
+.c-job {
+    &__header {
+        margin-bottom: 121px;
+    }
+    &__body {
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    .c-table1 {
+        th {
+            padding: 20px 27px;
+        }
+        td {
+            padding: 27px 33px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-job {
+        &__body {
+            overflow: auto;
+        }
+        .c-table1 {
+            td,
+            th {
+                padding: 15px 25px;
+            }
+        }
+    }
+}

@@ -1,4 +1,6 @@
 .c-preamble {
+    max-width: 1920px;
+    margin: 0 auto;
     &__header {
         margin-bottom: 90px;
     }
@@ -113,5 +115,123 @@
     &__footer {
         margin-top: 68px;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-preamble {
+        &__item {
+            flex-direction: column;
+        }
+        &__content {
+            z-index: 1;
+            padding: 30px 25px 46px;
+            width: 100%;
+            margin-top: -50px;
+            &::after {
+                bottom: inherit;
+                top: 0;
+            }
+        }
+        &__picture {
+            order: -1;
+            margin: 0px -3.3%;
+        }
+        &__title {
+            font-size: 2.2rem;
+        }
+        &__desc {
+            font-size: 1.6rem;
+        }
+        .slick-dots {
+            bottom: -40px;
+            right: 0;
+            left: 0;
+        }
+    }
+}
+
+.c-preamble1 {
+    max-width: 1920px;
+    margin: 0 auto;
+    &__title {
+        text-align: center;
+        font-size: 2.6rem;
+        letter-spacing: 5px;
+        line-height: 2;
+    }
+    &__desc {
+        padding: 0 54px;
+        margin-top: 28px;
+        font-size: 1.8rem;
+        line-height: 2;
+        letter-spacing: 6px;
+    }
+    &__header {
+        margin-bottom: 98px;
+    }
+    &__sub {
+        margin-top: 48px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &__body {
+        display: flex;
+    }
+    &__content {
+        flex: 1;
+    }
+    &__img1,
+    &__img2 {
+        width: 29%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .c-preamble1 {
+        &__body {
+            max-width: 80%;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        &__img1,
+        &__img2 {
+            width: 49%;
+        }
+        &__desc {
+            padding: 0;
+        }
+        &__content {
+            order: 2;
+            flex: initial;
+            width: 100%;
+            padding: 0;
+        }
+        &__title {
+            text-align: left;
+        }
+        &__desc {
+            margin-top: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-preamble1 {
+        width: 94%;
+        &__title {
+            margin-top: 20px;
+            font-size: 2.2rem;
+        }
+        &__desc {
+            font-size: 1.6rem;
+        }
+        &__body {
+            max-width: 100%;
+        }
     }
 }

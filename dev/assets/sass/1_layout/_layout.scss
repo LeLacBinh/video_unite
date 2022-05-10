@@ -51,7 +51,8 @@ body {
     .l-container {
         padding: 0 10px;
         &--custom,
-        &--collapse {
+        &--collapse,
+        &--small {
             padding: 0;
         }
     }

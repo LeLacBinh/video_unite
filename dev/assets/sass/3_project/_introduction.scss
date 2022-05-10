@@ -1,5 +1,102 @@
 .p-introduction {
     &1 {
+        padding: 77px 0 0;
         overflow: hidden;
+    }
+    &2 {
+        padding: 181px 0 122px;
+        .c-post {
+            figcaption {
+                margin-top: 21px;
+            }
+            &__foot {
+                margin-top: 16px;
+            }
+        }
+    }
+    &3 {
+        .c-point {
+            padding: 99px 0 86px;
+        }
+    }
+    &4 {
+        padding: 153px 0 179px;
+    }
+    &5 {
+        overflow: hidden;
+        position: relative;
+        padding: 103px 0 188px;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 79%;
+            height: 58%;
+            background: url('../img/floor-map-image-1.png');
+            background-size: cover;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 79%;
+            height: 58%;
+            background: rgba(224, 109, 24, .9);
+        }
+    }
+    &6 {
+        padding-bottom: 156px;
+    }
+    &7 {
+        background-color: #f0f0f0;
+        padding: 123px 0 144px;
+        .c-contactForm {
+            padding: 30px 25px 50px;
+        }
+    }
+    &8 {
+        padding: 117px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .p-introduction {
+        &5 {
+            padding: 60px 0 100px;
+            &::after,
+            &::before {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .p-introduction {
+        &2 {
+            padding: 100px 0 90px;
+        }
+        &4 {
+            padding: 100px 0 120px;
+        }
+        &5 {
+            &::after,
+            &::before {
+                width: 100%;
+            }
+        }
+        &6 {
+            padding-bottom: 80px;
+        }
+        &7 {
+            padding: 120px 0 130px;
+        }
+        &8 {
+            padding: 80px 0;
+        }
     }
 }
